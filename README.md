@@ -51,8 +51,7 @@ Deployment should take around 20 minutes depending on your computer and the inte
 
  You shouldn't need to access the IPA server during your practice exams. Everything should be provided that you would normally need during an actual exam. Hope this helps in your studies!You can also use the VirtualBox console to interact with the VMs or through a terminal. **If you need to reset the root password, you would need to use the console.**
 
-## Notable Vagrant Commands to control the environment:
-- `ansible-playbook playbooks/reset.yml` - Used for resetting the environment after attempting the practice exam in the Red Hat Certs Slack workspace practice exam channel. 
+## Notable Vagrant Commands to control the environment: 
 - `vagrant up` - Boots and provisions the environment
 - `vagrant destroy vm-name` - To destroy a Virtual Machine
 - `vagrant destroy -f` - Shuts down and destroys all the Virtual Machines
