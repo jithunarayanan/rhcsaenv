@@ -11,9 +11,9 @@
       path: /usr/bin/python
       state: link
   - name: Resetting Hostname
-    hostname: name=server1.eight.example.com
+    hostname: name=server1.lab.example.com
   - name: Resetting network config
-    shell: nmcli con mod "System enp0s8" ipv4.addresses 192.168.55.150/24 ipv4.gateway 192.168.55.1 ipv4.dns 8.8.8.8 ipv4.dns-search eight.example.com ipv4.method manual
+    shell: nmcli con mod "System enp0s8" ipv4.addresses 192.168.55.150/24 ipv4.gateway 192.168.55.1 ipv4.dns 8.8.8.8 ipv4.dns-search lab.example.com ipv4.method manual
   - name: Reloading Network
     service: 
       name: NetworkManager
@@ -161,9 +161,9 @@
       path: /usr/bin/python
       state: link
   - name: Setting Hostname
-    hostname: name=server2.eight.example.com
+    hostname: name=server2.lab.example.com
   - name: Resetting network config
-    shell: nmcli con mod "System enp0s8" ipv4.addresses 192.168.55.151/24 ipv4.gateway 192.168.55.1 ipv4.dns 8.8.8.8 ipv4.dns-search eight.example.com ipv4.method manual
+    shell: nmcli con mod "System enp0s8" ipv4.addresses 192.168.55.151/24 ipv4.gateway 192.168.55.1 ipv4.dns 8.8.8.8 ipv4.dns-search lab.example.com ipv4.method manual
   - name: Reloading Network
     service: 
       name: NetworkManager
