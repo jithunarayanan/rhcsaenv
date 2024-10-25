@@ -27,13 +27,17 @@ Once the above software is installed, Do the following.
 
 1. Create a separate `~/bin` directory and `cd` to it.  (The directory doesn't have to be ~/bin, it can be anything you want.)
 
-`mkdir bin && cd bin`
+```
+mkdir bin && cd bin
+```
 
 2. Clone the repo to it with `git clone https://github.com/jithunarayanan/rhcsaenv.git` command.
 
 3. Change to the `rhcsaenv` directory that is now in your `~/bin` directory.
 
-`cd rhcsaenv`
+```
+cd rhcsaenv
+```
 
 4. Run `vagrant up` to deploy the environment (If the environment has a designated repo VM it will take the longest to deploy the first time only, this is because the repo system has all the packages available to the base release but will be quicker on subsequent deployments.)
 
@@ -72,14 +76,19 @@ Deployment should take around 20 minutes depending on your computer and the inte
 - Gateway - 192.168.55.1
 - DNS - 8.8.8.8
 
-There is a Repo/AppStream available to use from `http://repo.lab.example.com/BaseOS` and `http://repo.lab.example.com/AppStream`
+## Credentials
+Username - vagrant
+
+Password - vagrant
 
 ## Accessing the systems
 Remember to add the IP addresses to your local host file if you want to connect to the guest systems with the hostname.
-Username - vagrant
-Password - vagrant
 - For root - use `sudo` or `sudo su`
 Access example - `ssh vagrant@192.168.55.150` or `vagrant ssh system`
+
+## Repo
+There is a Repo available to use from `http://repo.lab.example.com/BaseOS` and `http://repo.lab.example.com/AppStream`
+
 
 ## Help
 If you're having problems with the environment, please submit an issue by going to the `ISSUES` tab at the top. If you have more questions, looking for practice exams to use against this environment, or just looking for a fantastic Red Hat community to join to get your questions answered, check out the Red Hat Certs Slack Workspace. You can find the invite link at the top of this page next to the description.
