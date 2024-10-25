@@ -5,18 +5,19 @@ The purpose of this project is to help individuals preparing for the RHCSA exam 
 
 ## Prerequisites
 1. **VirtualBox**
- - [Install VirtualBox depending on your operating system.](https://www.virtualbox.org/wiki/Downloads)
- - [Install the VirtualBox Extension Pack that matches your installed version.](https://www.virtualbox.org/wiki/Downloads)
+ - [Install VirtualBox depending on your operating system.](https://www.virtualbox.org/wiki/Download_Old_Builds)
+ - [Install the VirtualBox Extension Pack that matches your installed version.](https://www.virtualbox.org/wiki/Download_Old_Builds)
  >>**NOTE2:** VirtualBox 7, 6, 5, 4 only supported. **(Latest version of VirtualBox (7.1) is not supported)**
 
 2. **Vagrant**
-- [Install latest version of Vagrant depending on your operating system.]((https://www.vagrantup.com/downloads.html))
+- [Install latest version of Vagrant depending on your operating system.](https://www.vagrantup.com/downloads.html)
 - After installing Vagrant, add the Vagrant Ansible plugin with the following command (supported on Windows as well)
 ```
 vagrant plugin install vagrant-guest-ansible
 ```
 3. **ruby**
 - [Install latest version ruby depending on your operatingsystem.](https://www.ruby-lang.org/en/documentation/installation/)
+  
 4 **python**
 - [Install python depending on your operatingsystem.](https://www.python.org/downloads/)
 
